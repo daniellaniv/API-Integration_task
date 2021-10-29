@@ -72,8 +72,8 @@ def Queries():
                  'order by `registered.date` desc ' \
                  'limit 20) '
 
-    CombineTest20Test5 = 'select * from Daniella_test_20 union all select * from Daniella_test_5 '
-    CombineTest20Test2 = 'select * from Daniella_test_20 union distinct select * from Daniella_test_2'
+    CombineTest20Test5 = 'select * from Daniella_test_20 union distinct select * from Daniella_test_5 '
+    CombineTest20Test2 = 'select * from Daniella_test_20 union all select * from Daniella_test_2'
 
     ''' Run Functions'''
     QueryToTable(Top20Query, 'Daniella_test_20')
